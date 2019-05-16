@@ -2,7 +2,7 @@
 
 
 def collatz(number):
-    """a program that I am just starting to understand."""
+    """An algorithm that no matter what positive number you give, it will return 1."""
     if number % 2 == 0:
         print(number // 2)
         return number // 2
@@ -13,6 +13,18 @@ def collatz(number):
         return result
 
 
-num = input("Enter number: ")
-while num != 1:
-    num = collatz(int(num))
+def ask():
+    """..."""
+    num = int(input("Enter number: "))
+
+    try:
+        num
+
+    except ValueError or UnboundLocalError:
+        print("Just enter a number!")
+
+    while num != 1:
+        num = collatz(num)
+
+
+ask()
