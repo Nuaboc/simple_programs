@@ -28,10 +28,13 @@ def ask():
 
 
 def again():
+    """Ask the user if want to try a different integer."""
     a = input("Want to try with another number? YES/NO: ")
     while True:
         if a == 'YES':
             ask()
+            # Este 'break era el que me faltaba!!!!!!!!!
+            break
         elif a == 'NO':
             break
         else:
