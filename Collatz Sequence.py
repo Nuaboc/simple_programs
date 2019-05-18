@@ -39,6 +39,7 @@ def again():
             break
         else:
             again()
+            break
 
 
 ask()
