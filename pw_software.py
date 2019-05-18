@@ -4,7 +4,8 @@
 # AND ONLY USE A SINGLE PASSWORD (KEY) TO UNLOCK IT, THEN COPY AND PASTE
 # THE SPECIFIC PASSWORD TO THE SPECIFIC ACCOUNT.
 
-import sys, pyperclip
+import sys
+import pyperclip
 
 
 passwords = {'email': 'F7minlBDDuvMJuxESSKHFhTxFtjVB6',
