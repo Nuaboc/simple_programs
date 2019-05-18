@@ -24,6 +24,18 @@ def ask():
             print("ONLY INTEGER!!!")
             ask()
             break
+    again()
+
+
+def again():
+    a = input("Want to try with another number? YES/NO: ")
+    while True:
+        if a == 'YES':
+            ask()
+        elif a == 'NO':
+            break
+        else:
+            again()
 
 
 ask()
