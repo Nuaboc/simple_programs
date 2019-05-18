@@ -16,13 +16,14 @@ def collatz(number):
 
 def ask():
     """A function to ask the user for an integer."""
-    num = input("Enter a number: ")
+    num = input("Enter an integer: ")
     while num != 1:
         try:
             num = collatz(num)
         except ValueError:
-            print("Just enter a number!")
-
+            print("ONLY INTEGER!!!")
+            ask()
+            break
 
 
 ask()
