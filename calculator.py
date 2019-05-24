@@ -1,16 +1,17 @@
-from chatterbot import ChatBot
-
 from tkinter import *
 
+
 def iCalc(source, side):
-    storeObj = Frame(source, borderwidth=4, bd=4, bg="powder blue")
-    storeObj.pack(side=side, expand =YES, fill =BOTH)
-    return storeObj
+    store_obj = Frame(source, borderwidth=4, bd=4, bg="powder blue")
+    store_obj.pack(side=side, expand =YES, fill =BOTH)
+    return store_obj
+
 
 def button(source, side, text, command=None):
-    storeObj = Button(source, text=text, command=command)
-    storeObj.pack(side=side, expand = YES, fill=BOTH)
-    return storeObj
+    store_obj = Button(source, text=text, command=command)
+    store_obj.pack(side=side, expand = YES, fill=BOTH)
+    return store_obj
+
 
 class app(Frame):
     def __init__(self):
@@ -45,7 +46,6 @@ class app(Frame):
                 btniEquals.bind('<ButtonRelease-1>', lambda e,s=self,
                                 storeObj=display: s.calc(storeObj), '+')
 
-
             else:
                 btniEquals = button(EqualButton, LEFT, iEquals,
                                     lambda storeObj=display, s=' %s ' % iEquals: storeObj.set
@@ -58,5 +58,5 @@ class app(Frame):
                 display.set("ERROR")
 
 
-if __name__=='__main__':
- app().mainloop()
+if __name__ == '__main__':
+    app().mainloop()
