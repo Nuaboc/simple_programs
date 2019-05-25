@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 # The Collatz Sequence
 
 
@@ -31,11 +33,11 @@ def again():
     """Ask the user if want to try a different integer."""
     a = input("Want to try with another number? YES/NO: ")
     while True:
-        if a == 'YES':
+        if a == 'YES' or 'yes':
             ask()
             # Este 'break era el que me faltaba!!!!!!!!!
             break
-        elif a == 'NO':
+        elif a == 'NO' or 'no':
             break
         else:
             again()
