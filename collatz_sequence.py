@@ -20,7 +20,7 @@ def ask():
     """A function to ask the user for an integer."""
     num = input("Enter an integer: ")
     while num != 1:
-        try:
+        try:  # ..........Probably will be better with an if statement..........
             num = collatz(num)
         except ValueError:
             print("ONLY INTEGER!!!")
