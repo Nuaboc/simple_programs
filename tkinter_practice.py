@@ -52,7 +52,7 @@ dictionary = {
     'bug': "Piece of code that cause a program to fail"
 }
 # Exit label
-Label(window, text="Click to exit:", bg='black', fg='red', font="none 16 bold") .grid(row=6, column=0, sticky=W)
+Label(window, text="Click to exit:", bg='black', fg='red', font="none 14 bold") .grid(row=6, column=0, sticky=E)
 
 
 # Exit function
@@ -63,7 +63,7 @@ def close_window():
 
 
 # Exit button
-Button(window, text="Exit", width=14, command=close_window) .grid(row=7, column=0, sticky=W)
+Button(window, text="Exit", width=14, command=close_window) .grid(row=6, column=1, sticky=E)
 
 # MAIN LOOP...
 
