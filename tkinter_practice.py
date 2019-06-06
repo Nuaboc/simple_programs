@@ -2,18 +2,27 @@
 
 from tkinter import *
 
-# Key down function
 
+# Key down function
 
 def click():
     """This will collect the text from the text entry box."""
     entered_text = text_entry.get()
+    output.delete(0.0, END)
+    try:
+        definition = dictionary[entered_text]
+    except:
+        definition = "Sorry, that word is not in our dictionary. We will add it soon."
+        output.insert(END, definition)
+
 
 # MAIN...
 
 window = Tk()
 window.title("Computer Science Glossary")
-window.configure(background='teal')
+window.configure(background='black')
+# The next line of code prevent the user form change the window size, so it don't look weird.
+# window.resizable(0, 0)
 
 # image
 photo1 = PhotoImage(file='men_train.gif')
@@ -34,7 +43,7 @@ Button(window, text="Submit", width=6, command=click) .grid(row=3, column=0, sti
 Label(window, text='\nDefinition:', bg='black', fg='white', font='none 12 bold') .grid(row=4, column=0, sticky=W)
 
 # Text box
-output = Text(window, width=75, height=6, wrap=WORD, background='white')
+output = Text(window, width=105, height=5, wrap=WORD, background='white')
 output.grid(row=5, column=0, columnspan=2, sticky=W)
 
 # The Dictionary
@@ -43,19 +52,18 @@ dictionary = {
     'bug': "Piece of code that cause a program to fail"
 }
 # Exit label
-Label(window, text="Click to exit:", bg='pink', fg='blue', font="none 16 bold") .grid(row=6, column=0, sticky=W)
+Label(window, text="Click to exit:", bg='black', fg='red', font="none 16 bold") .grid(row=6, column=0, sticky=W)
 
-# Exit functions
 
+# Exit function
 
 def close_window():
     """End the program."""
-    window.destroy()
     exit()
 
 
 # Exit button
-Button(window, text="Exit", width=14, command=close_window()) .grid(row=7, column=0, sticky=W)
+Button(window, text="Exit", width=14, command=close_window) .grid(row=7, column=0, sticky=W)
 
 # MAIN LOOP...
 
