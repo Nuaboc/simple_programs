@@ -1,5 +1,5 @@
-# simple_programs
-Simple programs to practice and learn basic codes.
+# Simple Programs
+Basic programs to practice and learn basic codes.
 
 ### Here a list of programs that I plan to work with in a near future.
 
