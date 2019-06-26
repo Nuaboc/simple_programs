@@ -8,7 +8,7 @@ def encrypt(cleartext):
     cyphertext = ""
     for char in cleartext:
         if char in alpha:
-            newpos = (alpha.find(char) + 12) % 26
+            newpos = (alpha.find(char) + 12) % 26   # if the first # where 13 you can reverse it easily.
             cyphertext += alpha[newpos]
         else:
             cyphertext += char
