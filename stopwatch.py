@@ -7,12 +7,12 @@
 
 # Project: Super Stopwatch
 
-import time
+import time, sys
 
-print("Press ENTER to begin. Afterwards, press ENTER to \"click\" the stopwatch. Press Ctrl-C to quit.")
+print("Press ENTER to begin.\nAfterwards, press ENTER to \"click\" the stopwatch.\nPress Ctrl-C to quit.")
 
 input()
-# press enter to begin
+# press enter to begin.
 print("Started!")
 
 start_time = round(time.time(), 2)
@@ -27,10 +27,10 @@ try:
         input()
         lap_time = round(time.time() - last_time, 2)
         total_time = round(time.time() - start_time, 2)
-        print("Lap #%s: %s (%s)" % (lap_num, total_time, lap_time), end='')
+        print("Lap #%s: Total time: %s ... Lap time: %s" % (lap_num, total_time, lap_time), end='')
         lap_num += 1
         last_time = time.time() # Reset the last lap time.
 
 except KeyboardInterrupt:
-    # Handle the Crtl-C exception to keep its error message from displaying.
+    # Handle the Ctrl-C exception to keep its error message from displaying.
     print('\nDone.')
