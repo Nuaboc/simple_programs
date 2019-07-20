@@ -31,7 +31,7 @@ while True:
 
     else:
         lap_time = round(time.time() - last_time, 2)
-        total_time = round(time.time() - start_time, 2)
+        total_time = round(time.time() - start_time, 2)  # Add a RegEx to show minutes when goes further than 59.99 sec.
         print("Lap #%s, time: %s ... Total time: %s" % (lap_num, lap_time, total_time), end='')
         lap_num += 1
         last_time = time.time()  # Reset the last lap time.
