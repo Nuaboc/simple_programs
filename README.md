@@ -7,9 +7,9 @@ Basic programs to practice and learn basic codes.
 #### Sticky Notes / To-Do list
 #### Notes
 #### Crypto Gui App
-#### URL shortener like bitly
+#### URL shortened like bitly
 #### Audio/Video Player
-#### Blogginf Website
+#### Blogging Website
 #### Calculator
 #### Data Scrapper
 #### Roman Numerical to Decimal number converter
