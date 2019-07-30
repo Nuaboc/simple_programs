@@ -9,15 +9,15 @@ def iCalc(source, side):
 
 def button(source, side, text, command=None):
     store_obj = Button(source, text=text, command=command)
-    store_obj.pack(side=side, expand = YES, fill=BOTH)
+    store_obj.pack(side=side, expand=YES, fill=BOTH)
     return store_obj
 
 
-class app(Frame):
+class App(Frame):
     def __init__(self):
         Frame.__init__(self)
         self.option_add('*Font', 'arial 20 bold')
-        self.pack(expand = YES, fill =BOTH)
+        self.pack(expand=YES, fill=BOTH)
         self.master.title('Calculator')
 
         display = StringVar()
@@ -27,27 +27,25 @@ class app(Frame):
         for clearButton in (["C"]):
             erase = iCalc(self, TOP)
             for ichar in clearButton:
-                button(erase, LEFT, ichar, lambda
-                    storeObj=display, q=ichar: storeObj.set(''))
+                button(erase, LEFT, ichar, lambda store_obj=display, q=ichar: store_obj.set(''))
 
         for numButton in ("789/", "456*", "123-", "0.+"):
-         FunctionNum = iCalc(self, TOP)
+         function_num = iCalc(self, TOP)
          for iEquals in numButton:
-            button(FunctionNum, LEFT, iEquals, lambda
-                storeObj=display, q=iEquals: storeObj
-                   .set(storeObj.get() + q))
+            button(function_num, LEFT, iEquals, lambda store_obj=display, q=iEquals: store_obj
+                   .set(store_obj.get() + q))
 
-        EqualButton = iCalc(self, TOP)
+        equal_button = iCalc(self, TOP)
         for iEquals in "=":
             if iEquals == '=':
-                btniEquals = button(EqualButton, LEFT, iEquals)
-                btniEquals.bind('<ButtonRelease-1>', lambda e,s=self,
-                                storeObj=display: s.calc(storeObj), '+')
+                btniEquals = button(equal_button, LEFT, iEquals)
+                btniEquals.bind('<ButtonRelease-1>', lambda e, s=self,
+                                store_obj=display: s.calc(store_obj), '+')
 
             else:
-                btniEquals = button(EqualButton, LEFT, iEquals,
-                                    lambda storeObj=display, s=' %s ' % iEquals: storeObj.set
-                                    (storeObj.get() + s))
+                btniEquals = button(equal_button, LEFT, iEquals,
+                                    lambda store_obj=display, s=' %s ' % iEquals: store_obj.set
+                                    (store_obj.get() + s))
 
     def calc(self, display):
             try:
@@ -57,4 +55,4 @@ class app(Frame):
 
 
 if __name__ == '__main__':
-    app().mainloop()
+    App().mainloop()
