@@ -30,10 +30,10 @@ class App(Frame):
                 button(erase, LEFT, ichar, lambda store_obj=display, q=ichar: store_obj.set(''))
 
         for numButton in ("789/", "456*", "123-", "0.+"):
-         function_num = iCalc(self, TOP)
-         for iEquals in numButton:
-            button(function_num, LEFT, iEquals, lambda store_obj=display, q=iEquals: store_obj
-                   .set(store_obj.get() + q))
+            function_num = iCalc(self, TOP)
+            for iEquals in numButton:
+                button(function_num, LEFT, iEquals, lambda store_obj=display, q=iEquals: store_obj.set(store_obj.get() +
+                                                                                                       q))
 
         equal_button = iCalc(self, TOP)
         for iEquals in "=":
