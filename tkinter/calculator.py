@@ -39,13 +39,11 @@ class App(Frame):
         for iEquals in "=":
             if iEquals == '=':
                 btniEquals = button(equal_button, LEFT, iEquals)
-                btniEquals.bind('<ButtonRelease-1>', lambda e, s=self,
-                                store_obj=display: s.calc(store_obj), '+')
+                btniEquals.bind('<ButtonRelease-1>', lambda e, s=self, store_obj=display: s.calc(store_obj), '+')
 
             else:
-                btniEquals = button(equal_button, LEFT, iEquals,
-                                    lambda store_obj=display, s=' %s ' % iEquals: store_obj.set
-                                    (store_obj.get() + s))
+                btniEquals = button(equal_button, LEFT, iEquals, lambda store_obj=display,
+                s=' %s ' % iEquals: store_obj.set(store_obj.get() + s))
 
     def calc(self, display):
             try:
