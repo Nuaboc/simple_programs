@@ -12,18 +12,21 @@ roman_num = {'I': 1,
              'D': 500,
              'M': 1000}
 
-print("Give me a roman number to convert it to a cardinal number.")
-a = input()
-
 
 def convert():
-    if a in roman_num.keys():
-        for z in roman_num.keys():
-            if a == z:
-                b = roman_num.get(z)
-                print(b)
-    else:
-        print("Enter a roman number.")
+    print("Give me a roman number to convert it to a cardinal number.")
+    a = input()
+    while True:
+        if a in roman_num.keys():
+            for z in roman_num.keys():
+                if a == z:
+                    b = roman_num.get(z)
+                    # The remaining code should go here.
+                    print(b)
+            break
+        else:
+            print("Enter a roman number.")
+            a = input()
 
 
 # The next code also works, but I will keep the first one.
