@@ -13,6 +13,10 @@ roman_num = {'I': 1,
              'M': 1000}
 
 
+def mix_num(nums):
+    nums.split()
+
+
 def convert():
     print("Give me a roman number to convert it to a cardinal number.")
     a = input()
@@ -21,7 +25,7 @@ def convert():
             for z in roman_num.keys():
                 if a == z:
                     b = roman_num.get(z)
-                    # The remaining code should go here.
+                    # The remaining code should go here. >>mix_num()<<
                     print(b)
             break
         else:
