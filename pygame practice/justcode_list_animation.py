@@ -71,4 +71,4 @@ while True:
 	
 	# because the cat in the animation is black, the background colour needs to be something other
 	# than that. In this case it's grey
-	DS.fill((128, 128, 128))
+	DS.fill((200, 200, 200))

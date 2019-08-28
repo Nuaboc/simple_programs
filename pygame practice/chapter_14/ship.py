@@ -10,10 +10,12 @@ class Ship(Sprite):
         self.ai_settings = ai_settings
 
         # Load the ship image, and get its rect.
-        self.images = list([pygame.image.load('images/ani_test{0}.png'.format(i)) for i in range(1, 5)])
-
-        self.rect = self.images[0].get_rect()
+        # self.images = list([pygame.image.load('images/ani_test{0}.png'.format(i)) for i in range(1, 5)])
+        self.anim_test = list(pygame.image.load('images/ani_test{0}.png'.format(i)) for i in range(1, 5))
+        self.test_frames = 4
+        self.rect = self.anim_test[0].get_rect()
         self.screen_rect = screen.get_rect()
+        self.image = self.anim_test[1]
 
         # Start each new ship at the bottom center of the screen.
         self.rect.centerx = self.screen_rect.centerx
@@ -43,6 +45,6 @@ class Ship(Sprite):
         # Update rect object from self.center.
         self.rect.centerx = self.center
 
-    def blitme(self):
+    def blitme(self, x):
         """Draw the ship at its current location."""
-        self.screen.blit(self.images, self.rect)
+        self.screen.blit(self.anim_test[x], self.rect)

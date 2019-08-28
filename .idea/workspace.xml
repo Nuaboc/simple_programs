@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18ee49e-e63a-4cff-9a1a-ecbbb7de7a43" name="Default Changelist" comment="improving...">
-      <change beforePath="$PROJECT_DIR$/.idea/simple_programs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/simple_programs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pygame practice/chapter_14/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/pygame practice/chapter_14/alien_invasion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pygame practice/chapter_14/game_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/pygame practice/chapter_14/game_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pygame practice/chapter_14/scoreboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/pygame practice/chapter_14/scoreboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pygame practice/chapter_14/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pygame practice/chapter_14/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pygame practice/chapter_14/ship.py" beforeDir="false" afterPath="$PROJECT_DIR$/pygame practice/chapter_14/ship.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pygame practice/justcode_list_animation.py" beforeDir="false" afterPath="$PROJECT_DIR$/pygame practice/justcode_list_animation.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,26 +16,85 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/roman_num_converter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/neural_network.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/pygame practice/chapter_14/alien_invasion.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="334">
+                  <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+                  <folding>
+                    <element signature="e#0#13#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pygame practice/chapter_14/settings.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pygame practice/chapter_14/ship.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="127">
+                  <caret line="13" column="82" lean-forward="true" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
+                  <folding>
+                    <element signature="e#0#13#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pygame practice/chapter_14/scoreboard.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="484">
+                  <caret line="73" column="18" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="18" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pygame practice/justcode_list_animation.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+                  <folding>
+                    <element signature="e#97#107#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/pygame practice/chapter_14/game_functions.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="442">
+                  <caret line="98" column="6" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
+                  <folding>
+                    <element signature="e#0#10#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,6 +117,12 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
         <option value="$PROJECT_DIR$/neural_network.py" />
         <option value="$PROJECT_DIR$/roman_num_converter.py" />
+        <option value="$PROJECT_DIR$/pygame practice/justcode_list_animation.py" />
+        <option value="$PROJECT_DIR$/pygame practice/chapter_14/settings.py" />
+        <option value="$PROJECT_DIR$/pygame practice/chapter_14/scoreboard.py" />
+        <option value="$PROJECT_DIR$/pygame practice/chapter_14/game_functions.py" />
+        <option value="$PROJECT_DIR$/pygame practice/chapter_14/ship.py" />
+        <option value="$PROJECT_DIR$/pygame practice/chapter_14/alien_invasion.py" />
       </list>
     </option>
   </component>
@@ -67,13 +136,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="simple_programs" type="b2602c69:ProjectViewProjectNode" />
               <item name="simple_programs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple_programs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple_programs" type="462c0819:PsiDirectoryNode" />
+              <item name="pygame practice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple_programs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple_programs" type="462c0819:PsiDirectoryNode" />
+              <item name="pygame practice" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter_14" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="simple_programs" type="b2602c69:ProjectViewProjectNode" />
@@ -88,11 +167,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/chapter_14" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -113,8 +193,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.roman_num_converter">
-    <configuration name="calculator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.alien_invasion">
+    <configuration name="alien_invasion" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="simple_programs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -122,11 +202,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tkinter" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pygame practice/chapter_14" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tkinter/calculator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pygame practice/chapter_14/alien_invasion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="justcode_list_animation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="simple_programs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pygame practice" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pygame practice/justcode_list_animation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -177,27 +278,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tic_tac_toe" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="simple_programs" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tic_tac_toe.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="tkinter_practice" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="simple_programs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -221,11 +301,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.alien_invasion" />
+        <item itemvalue="Python.justcode_list_animation" />
         <item itemvalue="Python.roman_num_converter" />
         <item itemvalue="Python.neural_network" />
         <item itemvalue="Python.tkinter_practice" />
-        <item itemvalue="Python.calculator" />
-        <item itemvalue="Python.tic_tac_toe" />
       </list>
     </recent_temporary>
   </component>
@@ -378,6 +458,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09114858" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -414,6 +495,32 @@
     <MESSAGE value="cleaning some identifier naming styles" />
     <MESSAGE value="improving..." />
     <option name="LAST_COMMIT_MESSAGE" value="improving..." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pygame practice/chapter_14/alien_invasion.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pygame practice/chapter_14/ship.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pygame practice/chapter_14/game_functions.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pygame practice/chapter_14/game_functions.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://D:/Documents/Python/Automating the Boring Stuff/chapter_5.py" />
@@ -580,8 +687,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/roman_num_converter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -589,6 +696,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/pygame/sprite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="475" selection-start-line="475" selection-end-line="475" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pygame practice/chapter_14/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pygame practice/chapter_14/scoreboard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="73" column="18" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pygame practice/justcode_list_animation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="e#97#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pygame practice/chapter_14/game_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="98" column="6" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pygame practice/chapter_14/ship.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="13" column="82" lean-forward="true" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pygame practice/chapter_14/alien_invasion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
