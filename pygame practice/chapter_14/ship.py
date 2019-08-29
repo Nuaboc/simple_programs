@@ -11,7 +11,7 @@ class Ship(Sprite):
 
         # Load the ship image, and get its rect.
         # self.images = list([pygame.image.load('images/ani_test{0}.png'.format(i)) for i in range(1, 5)])
-        self.anim_test = list(pygame.image.load('images/ani_test{0}.png'.format(i)) for i in range(1, 5))
+        self.anim_test = list(pygame.image.load('images/ani_test{0}.png'.format(i)).convert_alpha() for i in range(1, 5))
         self.test_frames = 4
         self.rect = self.anim_test[0].get_rect()
         self.screen_rect = screen.get_rect()
