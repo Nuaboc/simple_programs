@@ -41,6 +41,7 @@ def run_game():
     # Start the main loop for the game.
     while True:
         gf.check_events(ai_settings, screen, stats, sb, play_button, ship, aliens, bullets)
+        # gf.play_intro(stats)
         # screen.blit(ship.anim_test[frame], (ai_settings.dwh - ship.rect.center[0], ai_settings.dhh - ship.rect.center[1]))
         pygame.display.update()
         clock.tick(fps)
