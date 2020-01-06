@@ -5,6 +5,15 @@ from kivy.uix.button import Button
 from kivy.graphics import Color, Ellipse, Line
 
 
+# Will try to modify the code so the user can have the options to select a color.
+red = (255, 000, 000)
+blue = (000, 000, 255)
+yellow = (255, 255, 000)
+green = (000, 255, 000)
+orange = (000, 255, 255)
+purple = (255, 000, 255)
+
+
 class MyPaintWidget(Widget):
 
     def on_touch_down(self, touch):
