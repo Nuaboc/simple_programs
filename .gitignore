@@ -117,3 +117,5 @@ dmypy.json
 *.xml
 *.xml
 *.xml
+.DS_Store
+pomodoro timer for mac/.idea/pomodoro timer for mac.iml
