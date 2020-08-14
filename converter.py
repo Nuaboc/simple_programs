@@ -13,4 +13,4 @@ ask = input('Give me a roman numeral: ')
 
 y = roman_functions.convert(ask)
 
-print(ask + ' in natural number is ' + y + '.')
+print(ask + ' in natural number is ' + str(y) + '.')

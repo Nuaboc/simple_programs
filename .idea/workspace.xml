@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18ee49e-e63a-4cff-9a1a-ecbbb7de7a43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/converter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/roman_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_roman_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/converter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roman_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/roman_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_roman_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_roman_functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>active</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,7 +22,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../On-going-learning/Python/Python Programming Certification" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
@@ -37,7 +32,7 @@
       <recent name="D:\Repos\Github\simple_programs\kivy" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.roman_functions">
+  <component name="RunManager" selected="Python.test_roman_functions">
     <configuration name="calculator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="simple_programs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -51,6 +46,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tkinter/calculator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="converter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="simple_programs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/converter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -122,34 +138,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tkinter_practice" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="simple_programs" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tkinter" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tkinter/tkinter_practice.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.roman_functions" />
         <item itemvalue="Python.test_roman_functions" />
+        <item itemvalue="Python.roman_functions" />
+        <item itemvalue="Python.converter" />
         <item itemvalue="Python.calculator" />
         <item itemvalue="Python.paint" />
-        <item itemvalue="Python.tkinter_practice" />
       </list>
     </recent_temporary>
   </component>
@@ -333,26 +328,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="learning..." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597329457465">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597375664751">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597329457465" />
-    <state width="1899" height="250" key="GridCell.Tab.0.bottom" timestamp="1597333845825">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597375664751" />
+    <state width="1899" height="250" key="GridCell.Tab.0.bottom" timestamp="1597378903801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597333845825" />
-    <state width="1899" height="250" key="GridCell.Tab.0.center" timestamp="1597333845825">
+    <state width="1899" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597378903801" />
+    <state width="1899" height="250" key="GridCell.Tab.0.center" timestamp="1597378903801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="250" key="GridCell.Tab.0.center/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597333845825" />
-    <state width="1899" height="250" key="GridCell.Tab.0.left" timestamp="1597333845825">
+    <state width="1899" height="250" key="GridCell.Tab.0.center/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597378903801" />
+    <state width="1899" height="250" key="GridCell.Tab.0.left" timestamp="1597378903801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="250" key="GridCell.Tab.0.left/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597333845825" />
-    <state width="1899" height="250" key="GridCell.Tab.0.right" timestamp="1597333845825">
+    <state width="1899" height="250" key="GridCell.Tab.0.left/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597378903801" />
+    <state width="1899" height="250" key="GridCell.Tab.0.right" timestamp="1597378903801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="250" key="GridCell.Tab.0.right/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597333845825" />
+    <state width="1899" height="250" key="GridCell.Tab.0.right/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597378903801" />
     <state width="1899" height="347" key="GridCell.Tab.1.bottom" timestamp="1597333651616">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

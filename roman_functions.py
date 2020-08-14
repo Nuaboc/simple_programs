@@ -7,52 +7,50 @@ Date: August 13, 2020
 
 import introcs
 
-I = 1
-i = 'I'
-
-V = 5
-v = 'V'
-
-X = 10
-x = 'X'
-
-L = 50
-l = 'L'
-
-C = 100
-c = 'C'
+rom_num = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100}
 
 
-def is_roman(x):
+def is_roman(rom):
     """
-    Returns True if the given value on x is a Roman Numeral.
+    Returns True if the given value on rom is a Roman Numeral.
 
     Example: is_roman('XIX') returns True
     Example: is_roman(23) returns False
     Example: is_roman('iefj') returns False
 
-    :param x: a string to check
-    precondition: x is a string with a valid roman numeral
+    :param rom: a string to check
+    precondition: rom is a string with a valid roman numeral
     :return: type is bool
     """
-    # verify that x is a string
-    # verify that x has valid roman numerals
+    # verify that rom is a string
+    # verify that rom has valid roman numerals
+    b = None
 
-    # return bool
+    for i in rom:
+        if i in rom_num.keys():
+            b = True
+            # print('llego')
+        else:
+            b = False
+            # print('aca')
+
+    return b
 
 
-def convert(x):
+def convert(rom):
     """
     Returns the given roman numeral value in natural numeral value.
 
     Example: convert('V') returns 5
     Example: convert('XX') returns 20
-    Example:
+    Example: convert('CLIV') returns 154
 
-    :param x: a string to convert
-    precondition: x is a string with roman numerals
+    :param rom: a string to convert
+    precondition: rom is a string with roman numerals
     :return: a str
     """
-    # take each index in x and calculate the number
+    # verify if rom is a valid roman number
 
+    # take each index in rom and convert it individually to natural numbers
+    # make the sum and subtraction
     # return the converted number
