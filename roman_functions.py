@@ -7,7 +7,7 @@ Date: August 13, 2020
 
 import introcs
 
-rom_num = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100}
+rom_dict = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100}
 
 
 def is_roman(rom):
@@ -19,15 +19,15 @@ def is_roman(rom):
     Example: is_roman('iefj') returns False
 
     :param rom: a string to check
-    precondition: rom is a string with a valid roman numeral
+    precondition: rom is a string
     :return: type is bool
     """
-    # verify that rom is a string
-    # verify that rom has valid roman numerals
+    assert type(rom) == str
+
     b = None
 
     for i in rom:
-        if i in rom_num.keys():
+        if i in rom_dict.keys():
             b = True
             # print('llego')
         else:
@@ -37,7 +37,39 @@ def is_roman(rom):
     return b
 
 
-def convert(rom):
+def rom_to_nat(rom):
+    """
+    Return a list of translated rom to individual natural numbers.
+
+    Example: rom_to_nat('VII') return nat_list = ['5', '1', '1']
+
+    :param rom: a string to convert
+    precondition: rom is a string with a valid roman number
+    :return: a list of integer(s)
+    """
+    # verify if rom is a valid roman number
+    # assert is_roman(rom)
+
+    rom_list = list(rom)
+    # print(rom_list)
+    nat_list = list()
+    # print(nat_list)
+
+    for a in rom_list:
+        # a is each value in the list rom_list
+        # take each index in rom_list and convert it individually to natural numbers
+        for b in rom_dict.keys():
+            # b are each key in the dictionary
+            if a == b:
+                c = rom_dict[b]
+                # c represents the value of the key b in rom_dict
+                # print(c)
+                nat_list.append(c)
+                # print(nat_list)
+    return nat_list
+
+
+def conversion(rom):
     """
     Returns the given roman numeral value in natural numeral value.
 
@@ -46,11 +78,32 @@ def convert(rom):
     Example: convert('CLIV') returns 154
 
     :param rom: a string to convert
-    precondition: rom is a string with roman numerals
-    :return: a str
+    precondition: rom is a string with valid roman numerals
+    :return: a int
     """
-    # verify if rom is a valid roman number
+    nat_list = rom_to_nat(rom)
+    # print(nat_list)
+    result = int
 
-    # take each index in rom and convert it individually to natural numbers
+    print('new for loop')
+    for x in nat_list:
+        print(x)
+        if nat_list.index(x) < len(nat_list) - 1:
+            print('yep' + str(len(nat_list) - 1))
+            prox = nat_list.index(x) + 1
+            print('jan' + str(prox))
+            y = nat_list[prox]
+            print('this' + str(y))
+
+        if x >= y:
+            result = x + y
+            print('pues' + str(result))
+
+        else:
+            print('aqui')
+
     # make the sum and subtraction
-    # return the converted number
+    return result
+
+
+print(conversion('XV'))
