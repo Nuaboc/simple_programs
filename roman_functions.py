@@ -47,8 +47,8 @@ def rom_to_nat(rom):
     precondition: rom is a string with a valid roman number
     :return: a list of integer(s)
     """
-    # verify if rom is a valid roman number
-    # assert is_roman(rom)
+    assert type(rom) == str
+    assert is_roman(rom)
 
     rom_list = list(rom)
     # print(rom_list)
@@ -90,20 +90,22 @@ def conversion(rom):
         print(x)
         if nat_list.index(x) < len(nat_list) - 1:
             print('yep' + str(len(nat_list) - 1))
-            prox = nat_list.index(x) + 1
-            print('jan' + str(prox))
-            y = nat_list[prox]
+            next1 = nat_list.index(x) + 1
+            print('jan' + str(next1))
+            y = nat_list[next1]
             print('this' + str(y))
 
-        if x >= y:
-            result = x + y
-            print('pues' + str(result))
+            if x >= y:
+                print(y)
+                result = x + y
+                print('pues' + str(result))
 
-        else:
-            print('aqui')
+            elif x < y:
+                result = y - x
+                print('aqui')
 
     # make the sum and subtraction
     return result
 
 
-print(conversion('XV'))
+print(conversion('XVI'))

@@ -32,17 +32,25 @@ def test_is_roman():
     introcs.assert_false(result)
 
 
-def test_convert():
+def test_rom_to_nat():
     """
-    A test for convert.
+    A test for the rom_to_nat function.
     """
-    print('Testing convert...')
+    print('Testing rom_to_nat...')
+
+
+def test_conversion():
+    """
+    A test for conversion.
+    """
+    print('Testing conversion...')
 
     # Test cases
-    result = roman_functions.convert('XIX')
+    result = roman_functions.conversion('XIX')
     introcs.assert_equals('19', result)
 
 
 test_is_roman()
-test_convert()
+test_rom_to_nat()
+test_conversion()
 print('All test completed successfully.')
