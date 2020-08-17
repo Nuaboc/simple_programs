@@ -74,27 +74,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="paint" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="simple_programs" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kivy" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kivy/paint.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="roman_functions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="simple_programs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,6 +87,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/roman_functions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="roman_num_converter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="simple_programs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/roman_num_converter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,9 +141,9 @@
       <list>
         <item itemvalue="Python.roman_functions" />
         <item itemvalue="Python.test_roman_functions" />
+        <item itemvalue="Python.roman_num_converter" />
         <item itemvalue="Python.converter" />
         <item itemvalue="Python.calculator" />
-        <item itemvalue="Python.paint" />
       </list>
     </recent_temporary>
   </component>
@@ -335,38 +335,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597375664751" />
-    <state width="1899" height="250" key="GridCell.Tab.0.bottom" timestamp="1597511504974">
+    <state width="1899" height="296" key="GridCell.Tab.0.bottom" timestamp="1597640622907">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597511504974" />
-    <state width="1899" height="250" key="GridCell.Tab.0.center" timestamp="1597511504974">
+    <state width="1899" height="296" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597640622907" />
+    <state width="1899" height="296" key="GridCell.Tab.0.center" timestamp="1597640622907">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="250" key="GridCell.Tab.0.center/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597511504974" />
-    <state width="1899" height="250" key="GridCell.Tab.0.left" timestamp="1597511504974">
+    <state width="1899" height="296" key="GridCell.Tab.0.center/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597640622907" />
+    <state width="1899" height="296" key="GridCell.Tab.0.left" timestamp="1597640622907">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="250" key="GridCell.Tab.0.left/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597511504974" />
-    <state width="1899" height="250" key="GridCell.Tab.0.right" timestamp="1597511504974">
+    <state width="1899" height="296" key="GridCell.Tab.0.left/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597640622907" />
+    <state width="1899" height="296" key="GridCell.Tab.0.right" timestamp="1597640622907">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="250" key="GridCell.Tab.0.right/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597511504974" />
-    <state width="1899" height="347" key="GridCell.Tab.1.bottom" timestamp="1597510576774">
+    <state width="1899" height="296" key="GridCell.Tab.0.right/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597640622907" />
+    <state width="1899" height="347" key="GridCell.Tab.1.bottom" timestamp="1597622249687">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597510576774" />
-    <state width="1899" height="347" key="GridCell.Tab.1.center" timestamp="1597510576774">
+    <state width="1899" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597622249687" />
+    <state width="1899" height="347" key="GridCell.Tab.1.center" timestamp="1597622249687">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.center/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597510576774" />
-    <state width="1899" height="347" key="GridCell.Tab.1.left" timestamp="1597510576774">
+    <state width="1899" height="347" key="GridCell.Tab.1.center/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597622249687" />
+    <state width="1899" height="347" key="GridCell.Tab.1.left" timestamp="1597622249687">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.left/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597510576774" />
-    <state width="1899" height="347" key="GridCell.Tab.1.right" timestamp="1597510576774">
+    <state width="1899" height="347" key="GridCell.Tab.1.left/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597622249687" />
+    <state width="1899" height="347" key="GridCell.Tab.1.right" timestamp="1597622249687">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597510576774" />
+    <state width="1899" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597622249687" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1597510446079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -396,8 +396,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/roman_functions.py</url>
-          <line>97</line>
-          <option name="timeStamp" value="17" />
+          <line>84</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/roman_functions.py</url>
+          <line>94</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/roman_functions.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

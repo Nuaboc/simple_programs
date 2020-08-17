@@ -7,7 +7,7 @@ Date: August 13, 2020
 
 import introcs
 
-rom_dict = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100}
+rom_dict = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
 
 
 def is_roman(rom):
@@ -82,30 +82,37 @@ def conversion(rom):
     :return: a int
     """
     nat_list = rom_to_nat(rom)
-    # print(nat_list)
-    result = int
+    next1 = 0
+    result = nat_list[0]
 
-    print('new for loop')
+    # print('new for loop')
     for x in nat_list:
-        print(x)
+        # print('the current x is ' + str(x))
         if nat_list.index(x) < len(nat_list) - 1:
-            print('yep' + str(len(nat_list) - 1))
-            next1 = nat_list.index(x) + 1
-            print('jan' + str(next1))
+            # print('yep' + str(len(nat_list) - 1))
+            next1 += 1
+            # print('next y index is ' + str(next1))
             y = nat_list[next1]
-            print('this' + str(y))
+            # print('the next y is ' + str(y))
 
             if x >= y:
-                print(y)
-                result = x + y
-                print('pues' + str(result))
+                # print(y)
+                # print('pues add ' + str(y) + ' a ' + str(result))
+                result += y
+                # print(result)
+                if len(nat_list) == next1 + 1:
+                    break
 
             elif x < y:
-                result = y - x
-                print('aqui')
+                result += y
+                result -= 2 * x
+                # print('aqui resto x')
+                # print(result)
+                if len(nat_list) == next1 + 1:
+                    break
 
     # make the sum and subtraction
     return result
 
 
-print(conversion('XVI'))
+print(conversion('CLXXI'))

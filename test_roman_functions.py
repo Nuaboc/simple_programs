@@ -38,6 +38,16 @@ def test_rom_to_nat():
     """
     print('Testing rom_to_nat...')
 
+    # Test Cases
+    result = roman_functions.rom_to_nat('XIX')
+    introcs.assert_equals([10, 1, 10], result)
+
+    result = roman_functions.rom_to_nat('VII')
+    introcs.assert_equals([5, 1, 1], result)
+
+    result = roman_functions.rom_to_nat('CXV')
+    introcs.assert_equals([100, 10, 5], result)
+
 
 def test_conversion():
     """
@@ -46,8 +56,17 @@ def test_conversion():
     print('Testing conversion...')
 
     # Test cases
+    result = roman_functions.conversion('V')
+    introcs.assert_equals(5, result)
+
+    result = roman_functions.conversion('XV')
+    introcs.assert_equals(15, result)
+
     result = roman_functions.conversion('XIX')
-    introcs.assert_equals('19', result)
+    introcs.assert_equals(19, result)
+
+    result = roman_functions.conversion('LXIX')
+    introcs.assert_equals(69, result)
 
 
 test_is_roman()
