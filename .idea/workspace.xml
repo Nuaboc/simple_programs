@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c18ee49e-e63a-4cff-9a1a-ecbbb7de7a43" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/converter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/roman_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/roman_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_roman_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_roman_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roman_num_converter.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +22,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../poop_master/dev_in_pygame" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -31,7 +32,7 @@
       <recent name="D:\Repos\Github\simple_programs\kivy" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.roman_functions">
+  <component name="RunManager" selected="Python.converter">
     <configuration name="calculator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="simple_programs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,10 +140,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.roman_functions" />
-        <item itemvalue="Python.test_roman_functions" />
-        <item itemvalue="Python.roman_num_converter" />
         <item itemvalue="Python.converter" />
+        <item itemvalue="Python.roman_functions" />
+        <item itemvalue="Python.roman_num_converter" />
+        <item itemvalue="Python.test_roman_functions" />
         <item itemvalue="Python.calculator" />
       </list>
     </recent_temporary>
@@ -331,26 +332,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597510446546" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597375664751">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597715652029">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597375664751" />
-    <state width="1899" height="296" key="GridCell.Tab.0.bottom" timestamp="1597640622907">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597715652029" />
+    <state width="1899" height="296" key="GridCell.Tab.0.bottom" timestamp="1597692205900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="296" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597640622907" />
-    <state width="1899" height="296" key="GridCell.Tab.0.center" timestamp="1597640622907">
+    <state width="1899" height="296" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597692205900" />
+    <state width="1899" height="296" key="GridCell.Tab.0.center" timestamp="1597692205900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="296" key="GridCell.Tab.0.center/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597640622907" />
-    <state width="1899" height="296" key="GridCell.Tab.0.left" timestamp="1597640622907">
+    <state width="1899" height="296" key="GridCell.Tab.0.center/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597692205900" />
+    <state width="1899" height="296" key="GridCell.Tab.0.left" timestamp="1597692205900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="296" key="GridCell.Tab.0.left/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597640622907" />
-    <state width="1899" height="296" key="GridCell.Tab.0.right" timestamp="1597640622907">
+    <state width="1899" height="296" key="GridCell.Tab.0.left/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597692205900" />
+    <state width="1899" height="296" key="GridCell.Tab.0.right" timestamp="1597692205900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="296" key="GridCell.Tab.0.right/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597640622907" />
+    <state width="1899" height="296" key="GridCell.Tab.0.right/0.0.1920.1040/1920.305.1366.728@0.0.1920.1040" timestamp="1597692205900" />
     <state width="1899" height="347" key="GridCell.Tab.1.bottom" timestamp="1597622249687">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -393,21 +394,6 @@
           <url>file://$PROJECT_DIR$/pygame practice/chapter_14/game_functions.py</url>
           <line>117</line>
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/roman_functions.py</url>
-          <line>84</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/roman_functions.py</url>
-          <line>94</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/roman_functions.py</url>
-          <line>90</line>
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

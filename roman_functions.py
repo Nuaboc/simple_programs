@@ -41,7 +41,9 @@ def rom_to_nat(rom):
     """
     Return a list of translated rom to individual natural numbers.
 
-    Example: rom_to_nat('VII') return nat_list = ['5', '1', '1']
+    Example: rom_to_nat('VII') return nat_list = [5, 1, 1]
+    Example: rom_to_nat('XIX') return nat list = [10, 1, 10]
+    Example: rom_to_nat('CLXXXVIII') return nat list = [100, 50, 10, 10, 10, 5, 1, 1, 1]
 
     :param rom: a string to convert
     precondition: rom is a string with a valid roman number
@@ -113,6 +115,3 @@ def conversion(rom):
 
     # make the sum and subtraction
     return result
-
-
-print(conversion('CLXXI'))

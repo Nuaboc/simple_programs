@@ -11,6 +11,6 @@ import roman_functions
 
 ask = input('Give me a roman numeral: ')
 
-y = roman_functions.convert(ask)
+y = roman_functions.conversion(ask)
 
 print(ask + ' in natural number is ' + str(y) + '.')
