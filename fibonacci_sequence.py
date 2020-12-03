@@ -5,6 +5,7 @@ Each number in the sequence is the sum of the two numbers that precede it.
 """
 
 num = int(input())
+print('something')
 
 
 def fibonacci(n):
@@ -17,6 +18,7 @@ def fibonacci(n):
     :param n: is an input from the user, it should be a number
     :return: a sequence based in the Fibonacci sequence.
     """
+    print('test')
 
 
 fibonacci(num)
