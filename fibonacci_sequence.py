@@ -3,9 +3,8 @@ A code that develop the Fibonacci sequence.
 
 Each number in the sequence is the sum of the two numbers that precede it.
 """
-
+print('type a number:')
 num = int(input())
-print('something')
 
 
 def fibonacci(n):
@@ -18,7 +17,11 @@ def fibonacci(n):
     :param n: is an input from the user, it should be a number
     :return: a sequence based in the Fibonacci sequence.
     """
-    print('test')
+    if n <= 1:
+        return list(range(2))
+    else:
+        for i in range(n):
+            list(i)
 
 
 fibonacci(num)

@@ -8,7 +8,9 @@ class TestApp(App):
     """Testing the main window in kivy."""
 
     def build(self):
-        """Don't know what this do."""
+        """ build() needs to be overwritten """
+        # Label needs at least one parameter >>text<<
+        # parameters size_hint and pos_hint has default values
         return Label(text="Testing \n testing... \n 1...2...3")
 
 

@@ -1,3 +1,10 @@
+"""
+Pong Game tutorial.
+
+Script from Kivy, found in:
+https://kivy.org/doc/stable/
+"""
+
 from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.properties import (
