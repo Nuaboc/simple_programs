@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18ee49e-e63a-4cff-9a1a-ecbbb7de7a43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kivy/BoxLayout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kivy/button.kv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kivy/button_event.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kivy/button_kv.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kivy/calculator_app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/simple_programs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/simple_programs.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fibonacci_sequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/fibonacci_sequence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kivy/img_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/kivy/img_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kivy/kivy_practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/kivy/kivy_practice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kivy/paint.py" beforeDir="false" afterPath="$PROJECT_DIR$/kivy/paint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kivy/pong_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/kivy/pong_game.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +33,11 @@
       <recent name="D:\Repos\Github\On-going-learning\Python\Python Programming Certification" />
       <recent name="D:\Repos\Github\simple_programs\kivy" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/kivy/mobile_development" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.calculator_app">
+  <component name="RunManager" selected="Python.mobile_app">
     <configuration name="BoxLayout" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="simple_programs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -59,48 +51,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kivy/BoxLayout.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="button_event" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="simple_programs" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kivy" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kivy/button_event.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="button_kv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="simple_programs" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kivy" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kivy/button_kv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,6 +101,48 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="mobile_app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="simple_programs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kivy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kivy/mobile_development/mobile_app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pong_game" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="simple_programs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kivy" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kivy/pong_game.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="simple_programs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mobile_app" />
+        <item itemvalue="Python.pong_game" />
         <item itemvalue="Python.calculator_app" />
-        <item itemvalue="Python.scratch" />
-        <item itemvalue="Python.button_kv" />
-        <item itemvalue="Python.button_event" />
         <item itemvalue="Python.BoxLayout" />
+        <item itemvalue="Python.scratch" />
       </list>
     </recent_temporary>
   </component>
