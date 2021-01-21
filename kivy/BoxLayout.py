@@ -18,15 +18,15 @@ purple = [1, 0, 1, 1]
 
 class HBoxLayoutExample(App):
     def build(self):
+        # Create an instance of the boxlayout.
         layout = BoxLayout(padding=10)
         colors = [red, green, blue, purple]
 
         for i in range(5):
-            btn = Button(text="Button #%s" % (i+1),
-                         background_color=random.choice(colors)
-                         )
-
+            # Create an instance of >>Button()<< with some specific attributes and add it to the layout instance.
+            btn = Button(text="Button #%s" % (i+1), background_color=random.choice(colors))
             layout.add_widget(btn)
+
         return layout
 
 
