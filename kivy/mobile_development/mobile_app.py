@@ -14,6 +14,7 @@ purple = [1, 0, 1, 1]
 
 
 class MobileApp(App):
+
     def build(self):
         layout = BoxLayout(padding=5)
         colors = [red, green, blue, purple]

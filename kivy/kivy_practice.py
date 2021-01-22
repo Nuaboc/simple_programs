@@ -9,7 +9,7 @@ class TestApp(App):
 
     def build(self):
         """ build() needs to be overwritten """
-        # Label needs at least one parameter >>text<<
+        # One of the >>Label<< attributes is >>text<<
         # parameters size_hint and pos_hint has default values
         return Label(text="Testing \n testing... \n 1...2...3")
 
