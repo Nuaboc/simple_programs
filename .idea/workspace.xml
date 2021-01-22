@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c18ee49e-e63a-4cff-9a1a-ecbbb7de7a43" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kivy/calculator_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/kivy/calculator_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kivy/kivy_practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/kivy/kivy_practice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kivy/button_event.py" beforeDir="false" afterPath="$PROJECT_DIR$/kivy/button_event.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kivy/mobile_development/mobile_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/kivy/mobile_development/mobile_app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +34,7 @@
       <recent name="D:\Repos\Github\simple_programs\kivy" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.calculator_app">
+  <component name="RunManager" selected="Python.mobile_app">
     <configuration name="button_event" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="simple_programs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,7 +140,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="paint" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pong_game" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="simple_programs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -153,7 +152,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kivy/paint.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kivy/pong_game.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.calculator_app" />
         <item itemvalue="Python.mobile_app" />
-        <item itemvalue="Python.kivy_practice" />
-        <item itemvalue="Python.paint" />
+        <item itemvalue="Python.pong_game" />
         <item itemvalue="Python.button_event" />
+        <item itemvalue="Python.calculator_app" />
+        <item itemvalue="Python.kivy_practice" />
       </list>
     </recent_temporary>
   </component>

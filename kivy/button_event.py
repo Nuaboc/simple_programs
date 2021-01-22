@@ -21,7 +21,7 @@ class MainApp(App):
 
         return button
 
-    def on_press_button(self, instance):
+    def on_press_button(self):
         print('You pressed the button!')
 
 
