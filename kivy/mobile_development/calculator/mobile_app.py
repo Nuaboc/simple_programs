@@ -1,9 +1,24 @@
 """
 Script to practice kivy for mobile development.
+
+Tips from the following tutorials:
+
+Python | ScreenManager in Kivy using .kv file
+From Geek for Geeks, found in:
+https://www.geeksforgeeks.org/python-screenmanager-in-kivy-using-kv-file/
+
+Kivy Tutorial - Mobile App Development with Python
+From Tech with Tim, found in:
+https://www.techwithtim.net/tutorials/kivy-tutorial/multiple-screens/
+
+Tutorial of a calculator with Kivy.
+From Real Python, found in:
+https://realpython.com/mobile-app-kivy-python/
 """
+
 # Despite the >>PEP 8: E402<< says "module level import not at top of file"
 # for the kivy Config.set to affect the window, it should be imported and implemented
-# before importing the other modules
+# before importing other modules
 from kivy.config import Config
 # Limit the resize option to be False
 Config.set('graphics', 'resizable', 0)
@@ -14,7 +29,6 @@ Config.set('graphics', 'width', 414)
 Config.set('graphics', 'height', 896)
 
 # Now the rest of the modules may be imported
-
 import random
 from kivy.app import App
 from kivy.uix.screenmanager import Screen, ScreenManager
@@ -32,6 +46,10 @@ class PopUpScreen(Screen):
     pass
 
 
+# The ScreenManager controls moving between screens
+screen_manager = ScreenManager()
+
+
 class MobileApp(App):
     """A class to setup the app basics."""
 
@@ -40,7 +58,7 @@ class MobileApp(App):
         self.operators = ["/", "*", "+", "-"]
         self.last_was_operator = None
         self.last_button = None
-        main_layout = BoxLayout(orientation="vertical")
+        main_layout = BoxLayout(orientation="vertical", padding=10)
         self.solution = TextInput(multiline=False, readonly=True, halign="right", font_size=55)
         main_layout.add_widget(self.solution)
         buttons = [
