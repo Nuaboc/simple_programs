@@ -1,0 +1,101 @@
+#:kivy 2.0.0
+#:import FadeTransition kivy.uix.screenmanager.FadeTransition
+#:import FadeTransition kivy.uix.screenmanager.NoTransition
+# Root is the root widget
+Root:
+    canvas:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    transition: FadeTransition()
+    OpeningScreen:
+    MainScreen:
+
+<OpeningScreen>:
+    name: 'opening'
+
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'Super App!'
+            font_size: 100
+            color: 0, 0, 0, 1
+        FloatLayout:
+            color: 1, 0, 0, 1
+
+            Button:
+                background_color: 0, 0, 1, 1
+                size_hint: .5, .1
+                pos: root.width / 4, root.height / 8
+                text: 'go to main screen'
+                font_size: 30
+                on_release: app.root.current = 'main'
+
+<MainScreen>:
+    name: 'main'
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'main screen!'
+            font_size: 30
+        BoxLayout:
+            orientation: 'vertical'
+            Button:
+                size: (100, 100)
+                pos: (200, 450)
+                text: 'get random colour screen'
+                font_size: 30
+                on_release: app.root.new_colour_screen()
+            Button:
+                size: (100, 100)
+                pos: (200, 250)
+                text: 'Settings'
+                font_size: 30
+                on_release: app.root.go_to_settings()
+
+<ColourScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'colour {:.2},{:.2},{:.2} screen'.format(*root.colour[:3])
+            font_size: 30
+            color: 0, 0, 0, 1
+        Widget:
+            canvas:
+                Color:
+                    rgba: root.colour
+                Ellipse:
+                    pos: self.pos
+                    size: self.size
+        BoxLayout:
+            Button:
+                text: 'go to main screen'
+                font_size: 30
+                on_release: app.root.current = 'main'
+            Button:
+                text: 'get random colour screen'
+                font_size: 30
+                on_release: app.root.new_colour_screen()
+
+<Settings>:
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'Settings Menu'
+            font_size: 30
+            color: 0, 0, 0, 1
+        Widget:
+            canvas:
+                Color:
+                    rgba: 1, 0, 0, 1
+        BoxLayout:
+            Button:
+                text: 'go to main screen'
+                font_size: 30
+                on_release: app.root.current = 'main'
+            Button:
+                text: 'get random colour screen'
+                font_size: 30
+                on_release: app.root.new_colour_screen()

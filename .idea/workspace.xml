@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c18ee49e-e63a-4cff-9a1a-ecbbb7de7a43" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/kivy/mobile_development/kivy practice/mobile.kv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kivy/mobile_development/kivy practice/mobile_app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kivy/mobile_development/mobile.kv" beforeDir="false" afterPath="$PROJECT_DIR$/kivy/mobile_development/mobile.kv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kivy/mobile_development/mobile_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/kivy/mobile_development/mobile_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kivy/mobile_development/calculator/mobile.kv" beforeDir="false" afterPath="$PROJECT_DIR$/kivy/mobile_development/calculator/mobile.kv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,19 +23,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/kivy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/kivy/mobile_development" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/kivy/mobile_development" />
       <recent name="$PROJECT_DIR$/kivy" />
       <recent name="$PROJECT_DIR$" />
       <recent name="D:\Repos\Github\simple_programs" />
       <recent name="D:\Repos\Github\On-going-learning\Python\Python Programming Certification" />
-      <recent name="D:\Repos\Github\simple_programs\kivy" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.calculator_app">
+  <component name="RunManager" selected="Python.pong_game">
     <configuration name="button_event" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="simple_programs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,7 +99,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="kivy_practice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mobile_app (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="simple_programs" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,11 +107,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kivy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/kivy/mobile_development/calculator" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kivy/kivy_practice.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kivy/mobile_development/calculator/mobile_app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pong_game" />
+        <item itemvalue="Python.mobile_app (1)" />
         <item itemvalue="Python.calculator_app" />
         <item itemvalue="Python.mobile_app" />
-        <item itemvalue="Python.pong_game" />
         <item itemvalue="Python.button_event" />
-        <item itemvalue="Python.kivy_practice" />
       </list>
     </recent_temporary>
   </component>
