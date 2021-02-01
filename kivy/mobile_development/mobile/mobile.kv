@@ -1,7 +1,7 @@
 #:kivy 2.0.0
 #:import FadeTransition kivy.uix.screenmanager.FadeTransition
 #:import FadeTransition kivy.uix.screenmanager.NoTransition
-# Root is the root widget
+# Root is the root widget (a child class from Screen Manager)
 Root:
     canvas:
         Color:
@@ -12,50 +12,61 @@ Root:
     transition: FadeTransition()
     OpeningScreen:
     MainScreen:
+    SettingsScreen:
 
 <OpeningScreen>:
     name: 'opening'
-
     BoxLayout:
         orientation: 'vertical'
         Label:
             text: 'Super App!'
-            font_size: 100
+            font_size: 70
             color: 0, 0, 0, 1
-        FloatLayout:
-            color: 1, 0, 0, 1
 
+        FloatLayout:
             Button:
+                # set the background of the button blue
                 background_color: 0, 0, 1, 1
-                size_hint: .5, .1
-                pos: root.width / 4, root.height / 8
+                size_hint: .7, .1
+                # size_
+                pos: 60, root.height / 8
                 text: 'go to main screen'
                 font_size: 30
                 on_release: app.root.current = 'main'
 
 <MainScreen>:
     name: 'main'
+    # Full window
     BoxLayout:
         orientation: 'vertical'
-        Label:
-            text: 'main screen!'
-            font_size: 30
-        BoxLayout:
-            orientation: 'vertical'
+        FloatLayout:
             Button:
-                size: (100, 100)
-                pos: (200, 450)
-                text: 'get random colour screen'
+                size_hint: None, None
+                pos_hint: {'top': .8, 'right':.9}
+                size: (25, 25)
+                text: ':'
+                font_size: 25
+                on_release: app.root.current = 'settings'
+        FloatLayout:
+            Label:
+                pos_hint: {'top': 2}
+                text: 'Main Screen!'
                 font_size: 30
-                on_release: app.root.new_colour_screen()
-            Button:
-                size: (100, 100)
-                pos: (200, 250)
-                text: 'Settings'
-                font_size: 30
-                on_release: app.root.go_to_settings()
+                color: 0, 0, 0, 1
+
+        # Here is the table
+        GridLayout:
+            col: 6
+            canvas:
+                Color:
+                    rgba: 1, 0, 0, 1
+
+                Rectangle:
+                    size: 100, 100
+                    pos: 100, 100
 
 <ColourScreen>:
+    name: 'color'
     BoxLayout:
         orientation: 'vertical'
         Label:
@@ -70,6 +81,7 @@ Root:
                     pos: self.pos
                     size: self.size
         BoxLayout:
+            orientation: 'vertical'
             Button:
                 text: 'go to main screen'
                 font_size: 30
@@ -79,7 +91,8 @@ Root:
                 font_size: 30
                 on_release: app.root.new_colour_screen()
 
-<Settings>:
+<SettingsScreen>:
+    name: 'settings'
     BoxLayout:
         orientation: 'vertical'
         Label:
@@ -90,7 +103,10 @@ Root:
             canvas:
                 Color:
                     rgba: 1, 0, 0, 1
+                Rectangle:
+                    size: 100, 100
         BoxLayout:
+            orientation: 'vertical'
             Button:
                 text: 'go to main screen'
                 font_size: 30

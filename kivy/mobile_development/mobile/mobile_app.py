@@ -85,7 +85,7 @@ class ColourScreen(Screen):
     colour = ListProperty([1., 0., 0., 1.])
 
 
-class Settings(Screen):
+class SettingsScreen(Screen):
     pass
 
 
@@ -102,8 +102,8 @@ class Root(ScreenManager):
         self.add_widget(s)
         self.current = name
 
-    def go_to_settings(self):
-        settings = Settings()
+    def go_to_settings_screen(self):
+        settings = SettingsScreen()
         self.add_widget(settings)
 
 
