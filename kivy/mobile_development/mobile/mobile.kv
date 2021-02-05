@@ -74,7 +74,7 @@ Root:
             font_size: 30
             on_release: app.root.current = 'settings'
 
-        # Here is the table
+        # Here a gridlayout representing a table
         GridLayout:
             pos_hint: {'top': .75}
             size_hint: 1, .5
@@ -88,11 +88,10 @@ Root:
                 Rectangle:
                     size: self.size
                     pos: self.pos
+            # The 'slot1' is an input 'box'
             TextInput:
                 id: test
                 multiline: False
-                len: 8
-                #test: True
             Label:
                 text: 'slot2'
             Label:
@@ -107,6 +106,8 @@ Root:
                 text: 'slot7'
             Label:
                 text: app.test_var
+            #Label:
+                #text: test
 
 
 <ColourScreen>:
@@ -140,36 +141,49 @@ Root:
     name: 'settings'
     FloatLayout:
         Widget:
+            # Set up the background as a full window red rectangle
             canvas:
                 Color:
                     rgba: 1, 0, 0, 1
                 Rectangle:
                     size: root.size
-        FloatLayout:
-            Label:
-                text: 'Settings'
-                font_size: 30
-                color: 0, 0, 0, 1
-                pos_hint: {'top': 1.4}
+        Label:
+            text: 'Settings'
+            font_size: 30
+            color: 0, 0, 0, 1
+            pos_hint: {'top': 1.4}
         BoxLayout:
+            # Set the background of the boxlayout for the button blue with opacity at 20%
+            canvas:
+                Color:
+                    rgba: 1, 1, 1, .2
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
             orientation: 'vertical'
             padding: 15
-            pos_hint: {'top': .5}
-            pos: self.width / 3, 1
-            size_hint: 1, 1
+            pos_hint: {'center_y': .5, 'center_x': .5}
+            #pos: self.pos
+            size_hint: .5, .3
+            #size: self.size
             Button:
-                size_hint: .6, .4
-                pos_x: 1
+                pos_hint: {'center_y': .5, 'center_x': .5}
+                size_hint: .8, .1
+                background_color: 1, 0, 0, .8
                 text: 'go to main screen'
                 font_size: 25
                 on_release: app.root.current = 'main'
             Button:
-                size_hint: .60, .4
+                pos_hint: {'center_y': .5, 'center_x': .5}
+                size_hint: .8, .1
+                background_color: 0, 1, 0, .8
                 text: 'get random colour screen'
                 font_size: 25
                 on_release: app.root.new_colour_screen()
             Button:
-                size_hint: .6, .4
+                pos_hint: {'center_y': .5, 'center_x': .5}
+                size_hint: .8, .1
+                background_color: 0, 0, 1, .7
                 text: 'About'
                 font_size: 25
                 #on_release: app.root.new_colour_screen()

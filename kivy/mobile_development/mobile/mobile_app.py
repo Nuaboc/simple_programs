@@ -11,10 +11,6 @@ Kivy Tutorial - Mobile App Development with Python
 From Tech with Tim, found in:
 https://www.techwithtim.net/tutorials/kivy-tutorial/multiple-screens/
 
-Tutorial of a calculator with Kivy.
-From Real Python, found in:
-https://realpython.com/mobile-app-kivy-python/
-
 Despite the >>PEP 8: E402<< says "module level import not at top of file"
 for the kivy Config.set to affect the window, it should be imported and implemented
 before importing other modules
@@ -64,7 +60,7 @@ class MainScreen(Screen):
     pass
 
 
-class CustomDropDown(DropDown):
+'''class CustomDropDown(DropDown):
     pass
 
 
@@ -85,7 +81,7 @@ class Table(GridLayout):
 
         self.add_widget(Label(text='Email: '))
         self.mail = TextInput(multiline=False)
-        self.add_widget(self.mail)
+        self.add_widget(self.mail)'''
 
 
 class PopUpScreen(Screen):
@@ -113,9 +109,9 @@ class Root(ScreenManager):
         self.add_widget(s)
         self.current = name
 
-    def go_to_settings_screen(self):
+    '''def go_to_settings_screen(self):
         settings = SettingsScreen()
-        self.add_widget(settings)
+        self.add_widget(settings)'''
 
 
 class MobileApp(App):
