@@ -36,6 +36,7 @@ from kivy.uix.dropdown import DropDown
 from kivy.lang import Builder
 from kivy.properties import ListProperty
 from kivy.uix.screenmanager import Screen, ScreenManager
+from kivy.properties import StringProperty
 # Make available the Button class from the kivy library
 from kivy.uix.button import Button
 from kivy.uix.label import Label
@@ -57,6 +58,12 @@ class MainScreen(Screen):
         btn = Button(text='Value %d' % index, size_hint_y=None, height=44)
 
         dropdown.add_widget(btn)"""
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.test_var = 'coco'
+
+    def press(self):
+        self.ids.test_var2 = self.test_var
     pass
 
 
@@ -102,12 +109,20 @@ class Root(ScreenManager):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.opening = OpeningScreen()
+        self.test_var2 = StringProperty()
+        self.text_input = TextInput(multiline=False)
 
     def new_colour_screen(self):
         name = str(time.time())
         s = ColourScreen(name=name, colour=[random.random() for _ in range(3)] + [1])
         self.add_widget(s)
         self.current = name
+
+    def press(self):
+        self.ids.test_var2 = self.test_var
+
+    #def apply(self):
+        #self.test_var2 =
 
     '''def go_to_settings_screen(self):
         settings = SettingsScreen()
@@ -116,7 +131,6 @@ class Root(ScreenManager):
 
 class MobileApp(App):
     """A class to setup for the app basics."""
-    test_var = 'coco'
 
     def build(self):
         """This method will be used as a root for all widgets."""

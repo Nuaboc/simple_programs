@@ -54,7 +54,7 @@ Root:
 
 <MainScreen>:
     name: 'main'
-    test: test
+    test_var2: test_var2
 
     FloatLayout:
         Label:
@@ -90,8 +90,14 @@ Root:
                     pos: self.pos
             # The 'slot1' is an input 'box'
             TextInput:
-                id: test
+                # Set the input text box background to transparent
+                background_color: 0, 0, 0, 0
+                font_size: 20
+                #pos_hint: None, None
+                #pos: 80, 80
+                id: test_var2
                 multiline: False
+                on_text_validate: root.press()
             Label:
                 text: 'slot2'
             Label:
@@ -103,11 +109,11 @@ Root:
             Label:
                 text: 'slot6'
             Label:
-                text: 'slot7'
+                id: test_var
             Label:
-                text: app.test_var
-            #Label:
-                #text: test
+                text: root.test_var
+            Label:
+                id: root.test_var2
 
 
 <ColourScreen>:
