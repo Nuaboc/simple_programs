@@ -109,6 +109,7 @@ class Root(ScreenManager):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.opening = OpeningScreen()
+        self.text_var = StringProperty()
         self.test_var2 = StringProperty()
         self.text_input = TextInput(multiline=False)
 

@@ -48,7 +48,7 @@ Root:
 
 
 <Label>
-    font_size: 20
+    font_size: 25
     color: 0, 0, 0, 1
 
 
@@ -74,46 +74,82 @@ Root:
             font_size: 30
             on_release: app.root.current = 'settings'
 
-        # Here a gridlayout representing a table
-        GridLayout:
+        BoxLayout:
+            orientation: 'vertical'
             pos_hint: {'top': .75}
-            size_hint: 1, .5
-            cols: 3
-            padding: 5
-            spacing: 5
-            canvas:
-                Color:
-                    rgba: 0, .5, 1, .5
-                # Make a rectangle to render the canvas color
-                Rectangle:
-                    size: self.size
-                    pos: self.pos
-            # The 'slot1' is an input 'box'
-            TextInput:
-                # Set the input text box background to transparent
-                background_color: 0, 0, 0, 0
-                font_size: 20
-                #pos_hint: None, None
-                #pos: 80, 80
-                id: test_var2
-                multiline: False
-                on_text_validate: root.press()
-            Label:
-                text: 'slot2'
-            Label:
-                text: 'slot3'
-            Label:
-                text: 'slot4'
-            Label:
-                text: 'slot5'
-            Label:
-                text: 'slot6'
-            Label:
-                id: test_var
-            Label:
-                text: root.test_var
-            Label:
-                id: root.test_var2
+            size_hint: 1, None
+
+            GridLayout:
+                row_force_default: True
+                # Set the row height to 100 px
+                row_default_height: 100
+                cols: 6
+                size_hint: 1, None
+                canvas:
+                    Color:
+                        rgba: .5, .5, .5, .4
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                # Column titles
+                Label:
+                    text: 'Z'
+                    background_color: 1, 0, 1
+                Label:
+                    text: 'A'
+
+                Label:
+                    text: 'B'
+                Label:
+                    text: 'C'
+                Label:
+                    text: 'D'
+                Label:
+                    text: 'E'
+
+            # Here a gridlayout representing a table
+            GridLayout:
+                #pos_hint: {'top': .75}
+                size_hint: 1, None
+                cols: 6
+                #padding: 0
+                #spacing: 100
+                row_force_default: True
+                # Set the row height to 100 px
+                row_default_height: 100
+                canvas:
+                    Color:
+                        rgba: .5, .5, .5, .25
+                    # Make a rectangle to render the canvas color
+                    Rectangle:
+                        size: self.size
+                        pos: self.pos
+                # The 'slot1' is an input 'box'
+                TextInput:
+                    # Set the input text box background to transparent
+                    background_color: 0, 0, 0, 0
+                    font_size: 25
+                    pos_hint: None, None
+                    pos: 80, 80
+                    id: test_var2
+                    multiline: False
+                    on_text_validate: root.press()
+                Label:
+                    text: 'slot2'
+                Label:
+                    text: 'slot3'
+                Label:
+                    text: 'slot4'
+                Label:
+                    text: 'slot5'
+                Label:
+                    text: 'slot6'
+                Label:
+                    id: test_var
+                Label:
+                    text: root.test_var
+                Label:
+                    id: root.test_var2
 
 
 <ColourScreen>:
