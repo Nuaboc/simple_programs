@@ -36,7 +36,7 @@ from kivy.uix.dropdown import DropDown
 from kivy.lang import Builder
 from kivy.properties import ListProperty
 from kivy.uix.screenmanager import Screen, ScreenManager
-from kivy.properties import StringProperty
+from kivy.properties import StringProperty, ObjectProperty
 # Make available the Button class from the kivy library
 from kivy.uix.button import Button
 from kivy.uix.label import Label
@@ -58,37 +58,15 @@ class MainScreen(Screen):
         btn = Button(text='Value %d' % index, size_hint_y=None, height=44)
 
         dropdown.add_widget(btn)"""
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
-        self.test_var = 'coco'
 
     def press(self):
-        self.ids.test_var2 = self.test_var
-    pass
+        print(self.test_var.text)
+        #label = self.ids.test_var
 
 
 '''class CustomDropDown(DropDown):
     pass
-
-
-class Table(GridLayout):
-
-    def __init__(self, **kwargs):
-        super(Table, self).__init__(**kwargs)
-        self.cols = 2
-        self.rows = 3
-
-        self.add_widget(Label(text='First: '))
-        self.name = TextInput(multiline=False)
-        self.add_widget(self.name)
-
-        self.add_widget(Label(text='Last: '))
-        self.last = TextInput(multiline=False)
-        self.add_widget(self.last)
-
-        self.add_widget(Label(text='Email: '))
-        self.mail = TextInput(multiline=False)
-        self.add_widget(self.mail)'''
+'''
 
 
 class PopUpScreen(Screen):
@@ -106,12 +84,11 @@ class SettingsScreen(Screen):
 # The ScreenManager controls moving between screens
 class Root(ScreenManager):
 
+    test_var = ObjectProperty(None)
+
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.opening = OpeningScreen()
-        self.text_var = StringProperty()
-        self.test_var2 = StringProperty()
-        self.text_input = TextInput(multiline=False)
 
     def new_colour_screen(self):
         name = str(time.time())
@@ -120,7 +97,7 @@ class Root(ScreenManager):
         self.current = name
 
     def press(self):
-        self.ids.test_var2 = self.test_var
+        self.ids.test_var2 = test_var
 
     #def apply(self):
         #self.test_var2 =

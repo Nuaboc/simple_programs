@@ -54,7 +54,7 @@ Root:
 
 <MainScreen>:
     name: 'main'
-    test_var2: test_var2
+    test_var: testing_var
 
     FloatLayout:
         Label:
@@ -97,7 +97,6 @@ Root:
                     background_color: 1, 0, 1
                 Label:
                     text: 'A'
-
                 Label:
                     text: 'B'
                 Label:
@@ -109,11 +108,8 @@ Root:
 
             # Here a gridlayout representing a table
             GridLayout:
-                #pos_hint: {'top': .75}
                 size_hint: 1, None
                 cols: 6
-                #padding: 0
-                #spacing: 100
                 row_force_default: True
                 # Set the row height to 100 px
                 row_default_height: 100
@@ -126,12 +122,12 @@ Root:
                         pos: self.pos
                 # The 'slot1' is an input 'box'
                 TextInput:
+                    id: testing_var
+
                     # Set the input text box background to transparent
                     background_color: 0, 0, 0, 0
                     font_size: 25
-                    pos_hint: None, None
-                    pos: 80, 80
-                    id: test_var2
+                    text: 'default'
                     multiline: False
                     on_text_validate: root.press()
                 Label:
@@ -145,9 +141,9 @@ Root:
                 Label:
                     text: 'slot6'
                 Label:
-                    id: test_var
+                    text: 'slot7'
                 Label:
-                    text: root.test_var
+                    text: root.test_var.text
                 Label:
                     id: root.test_var2
 
