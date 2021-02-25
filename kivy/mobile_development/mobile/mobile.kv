@@ -55,6 +55,7 @@ Root:
 <MainScreen>:
     name: 'main'
     test_var: testing_var
+    test_var2: testing_var2
 
     FloatLayout:
         Label:
@@ -93,9 +94,6 @@ Root:
                         pos: self.pos
                 # Column titles
                 Label:
-                    text: 'Z'
-                    background_color: 1, 0, 1
-                Label:
                     text: 'A'
                 Label:
                     text: 'B'
@@ -105,6 +103,8 @@ Root:
                     text: 'D'
                 Label:
                     text: 'E'
+                Label:
+                    text: 'F'
 
             # Here a gridlayout representing a table
             GridLayout:
@@ -131,21 +131,25 @@ Root:
                     multiline: False
                     on_text_validate: root.press()
                 Label:
-                    text: 'slot2'
+                    text: 'slot 2'
                 Label:
-                    text: 'slot3'
+                    text: 'slot 3'
                 Label:
-                    text: 'slot4'
+                    text: 'slot 4'
                 Label:
-                    text: 'slot5'
+                    text: 'slot 5'
                 Label:
-                    text: 'slot6'
+                    text: 'slot 6'
                 Label:
-                    text: 'slot7'
+                    text: 'slot 7'
                 Label:
                     text: root.test_var.text
+                TextInput:
+                    id: testing_var2
                 Label:
-                    id: root.test_var2
+                    text: root.test_var2.text
+                Label:
+                    text: 'slot 10'
 
 
 <ColourScreen>:

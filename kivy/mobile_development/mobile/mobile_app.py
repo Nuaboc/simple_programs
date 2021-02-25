@@ -61,7 +61,7 @@ class MainScreen(Screen):
 
     def press(self):
         print(self.test_var.text)
-        #label = self.ids.test_var
+        # label = self.ids.test_var
 
 
 '''class CustomDropDown(DropDown):
@@ -99,8 +99,8 @@ class Root(ScreenManager):
     def press(self):
         self.ids.test_var2 = test_var
 
-    #def apply(self):
-        #self.test_var2 =
+    # def apply(self):
+        # self.test_var2 =
 
     '''def go_to_settings_screen(self):
         settings = SettingsScreen()
