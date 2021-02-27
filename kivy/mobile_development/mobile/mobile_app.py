@@ -63,6 +63,13 @@ class MainScreen(Screen):
         print(self.test_var.text)
         # label = self.ids.test_var
 
+    def show_keyboard(self):
+        keys = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h',
+                'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm']
+        for key in keys:
+            btn = Button(text=key, width=50, size_hint=(None, 0.15))
+            self.add_widget(btn)
+
 
 '''class CustomDropDown(DropDown):
     pass
@@ -78,6 +85,10 @@ class ColourScreen(Screen):
 
 
 class SettingsScreen(Screen):
+    pass
+
+
+class AboutScreen(Screen):
     pass
 
 

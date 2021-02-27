@@ -15,6 +15,7 @@ Root:
     OpeningScreen:
     MainScreen:
     SettingsScreen:
+    AboutScreen:
 
 
 <OpeningScreen>:
@@ -86,7 +87,7 @@ Root:
                 row_force_default: True
                 # Set the row height to 100 px
                 row_default_height: 100
-                cols: 6
+                cols: 3
                 size_hint: 1, None
                 canvas:
                     Color:
@@ -101,17 +102,11 @@ Root:
                     text: 'B'
                 Label:
                     text: 'C'
-                Label:
-                    text: 'D'
-                Label:
-                    text: 'E'
-                Label:
-                    text: 'F'
 
             # Here a gridlayout representing a table
             GridLayout:
                 size_hint: 1, None
-                cols: 6
+                cols: 3
                 row_force_default: True
                 # Set the row height to 100 px
                 row_default_height: 100
@@ -136,14 +131,14 @@ Root:
                     text: 'slot 2'
                 Label:
                     text: 'slot 3'
-                Label:
-                    text: 'slot 4'
+                TextInput:
+                    text: 'A2'
                 Label:
                     text: 'slot 5'
                 Label:
                     text: 'slot 6'
                 Label:
-                    text: 'slot 7'
+                    text: 'A3'
                 Label:
                     text: root.test_var.text
                 TextInput:
@@ -152,6 +147,12 @@ Root:
                     text: root.test_var2.text
                 Label:
                     text: 'slot 10'
+
+        Button:
+            size_hint: 1, .25
+            pos_hint: {'top': .25, 'right': 1}
+            text: 'push'
+            on_release: root.show_keyboard()
 
 
 <ColourScreen>:
@@ -230,4 +231,19 @@ Root:
                 background_color: 0, 0, 1, .7
                 text: 'About'
                 font_size: 25
-                #on_release: app.root.new_colour_screen()
+                on_release: app.root.current = 'about'
+
+<AboutScreen>
+    name: 'about'
+    FloatLayout:
+        Label:
+            text: 'About'
+            font_size: 100
+            pos_hint: {'center_x': 0.5, 'center_y': .75}
+
+        Button:
+            text: 'back'
+            font_size: 50
+            pos_hint: {'center_x': 0.5, 'center_y': 0.25}
+            size_hint: .5, .25
+            on_release: app.root.current = 'settings'
