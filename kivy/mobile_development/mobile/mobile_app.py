@@ -16,7 +16,8 @@ for the kivy Config.set to affect the window, it should be imported and implemen
 before importing other modules
 """
 
-# from kivy.config import Config
+from kivy.config import Config
+Config.set('kivy', 'keyboard_mode', 'systemandmulti')
 # Limit the resize option to be False
 # Config.set('graphics', 'resizable', 0)
 # The width nad height will be set as for an iphone 11R
@@ -40,9 +41,13 @@ from kivy.properties import StringProperty, ObjectProperty
 # Make available the Button class from the kivy library
 from kivy.uix.button import Button
 from kivy.uix.label import Label
+from kivy.uix.widget import Widget
+from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.gridlayout import GridLayout
+from kivy.uix.stacklayout import StackLayout
 from kivy.uix.textinput import TextInput
+from kivy.uix.popup import Popup
 
 import time
 import random
@@ -58,6 +63,10 @@ class MainScreen(Screen):
         btn = Button(text='Value %d' % index, size_hint_y=None, height=44)
 
         dropdown.add_widget(btn)"""
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.pc = PopUpContent()
+        self.p = Popup(title='Popup test', content=self.pc, size_hint=(None, None), size=(400, 400))
 
     def press(self):
         print(self.test_var.text)
@@ -66,9 +75,20 @@ class MainScreen(Screen):
     def show_keyboard(self):
         keys = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h',
                 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm']
+
+        self.keyboard = StackLayout(pos_hint={'top': .25})
+        x = 0
+
         for key in keys:
-            btn = Button(text=key, width=50, size_hint=(None, 0.15))
-            self.add_widget(btn)
+            btn = Button(text=key, width=40 + x * 5, size_hint=(None, 0.15))
+            self.keyboard.add_widget(btn)
+            x += 1
+
+        self.add_widget(self.keyboard)
+
+    def show_popup(self):
+
+        p.open()
 
 
 '''class CustomDropDown(DropDown):
@@ -76,7 +96,7 @@ class MainScreen(Screen):
 '''
 
 
-class PopUpScreen(Screen):
+class PopUpContent(FloatLayout):
     pass
 
 
@@ -109,13 +129,6 @@ class Root(ScreenManager):
 
     def press(self):
         self.ids.test_var2 = test_var
-
-    # def apply(self):
-        # self.test_var2 =
-
-    '''def go_to_settings_screen(self):
-        settings = SettingsScreen()
-        self.add_widget(settings)'''
 
 
 class MobileApp(App):
