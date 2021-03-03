@@ -52,6 +52,8 @@ from kivy.uix.popup import Popup
 import time
 import random
 
+import kivymd
+
 
 class OpeningScreen(Screen):
     pass

@@ -155,6 +155,7 @@ Root:
                     text: 'slot 3'
                 TextInput:
                     text: 'A2'
+                    multiline: False
                 Label:
                     text: 'slot 5'
                 Label:
@@ -162,15 +163,16 @@ Root:
                 Label:
                     text: 'A3'
                 Label:
-                    text: root.test_var.text
+                    text: root.test_var.text  # slot 8
                 TextInput:
-                    id: testing_var2
+                    id: testing_var2  # slot 9
+                    multiline: False
                 Label:
-                    text: root.test_var2.text
+                    text: root.test_var2.text  # slot 10
                 Label:
-                    text: 'slot 10'
+                    text: 'slot 11'
                 Button:
-                    text: 'Show PopUp window'
+                    text: 'Show PopUp window'  # slot 12
                     on_release: root.p.open()
 
         Button:
@@ -271,6 +273,7 @@ Root:
                 color: 0, 0, 1, 1
                 font_size: 25
                 on_release:
+                    root.manager.transition.direction = "left"
                     app.root.current = 'about'
 
 
