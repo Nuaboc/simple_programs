@@ -75,7 +75,7 @@ class MainScreen(Screen):
         self.prep_table()
 
     def prep_table(self):
-        for i in range(1, 19):
+        for i in range(1, 16):
             self.ids.container.add_widget(TextInput(text='slot ' + str(i), multiline=False))
 
     def press(self):
