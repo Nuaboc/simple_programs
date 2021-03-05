@@ -32,14 +32,13 @@ Root:
             pos_hint: {'top': 1.25}
         Label:
             text: 'Daily tip!!!'
-            font_size: 20
+            font_size: 30
             color: 0, 0, 0, 1
             pos_hint: {'top': 1}
         Label:
             text: 'Tap anywhere to continue'
             color: 0, 0, 0, .5
-            pos_hint: {'bottom': 2}
-            pos_hint: {'top': .75}
+            pos_hint: {'bottom': 2, 'top': .75}
         Button:
             # set the background transparent
             background_color: 0, 0, 0, 0
@@ -75,24 +74,26 @@ Root:
 
 <MainScreen>:
     name: 'main'
-    test_var: testing_var
-    test_var2: testing_var2
+    #test_var: testing_var
+    #test_var2: testing_var2
 
     FloatLayout:
         Label:
-            pos_hint: {'top': 1.40}
+            #pos_hint: {'y': 0, 'x': .5}
+            pos_hint: {'center_y': .9, 'center_x': .5}
+            #pos_hint: {'top': 1, 'right': .5}
+
             text: 'Main Screen!'
-            font_size: 30
+            font_size: 40
             color: 0, 0, 0, 1
         Button:
             background_normal: 'icon.png'
             #background_down: 'down.png'
             border: 0,0,0,0
             # Make the background of the button invisible
-            #background_color: 0, 0, 0, 0
             size_hint: None, None
             size: 100, 100
-            pos_hint: {'top': .95, 'right': .95}
+            pos_hint: {'center_x': .9, 'center_y': .9}
             # make the text visible
             color: 0, 0, 0, 1
             font_size: 30
@@ -100,88 +101,79 @@ Root:
                 root.manager.transition = SlideTransition()
                 app.root.current = 'settings'
 
-        BoxLayout:
-            orientation: 'vertical'
-            pos_hint: {'top': .75}
-            size_hint: 1, None
-
-            GridLayout:
-                row_force_default: True
-                # Set the row height to 100 px
-                row_default_height: 100
-                cols: 3
-                size_hint: 1, None
-                canvas:
-                    Color:
-                        rgba: .5, .5, .5, .4
-                    Rectangle:
-                        size: self.size
-                        pos: self.pos
-                # Column titles
-                Label:
-                    text: 'A'
-                Label:
-                    text: 'B'
-                Label:
-                    text: 'C'
-
-            # Here a gridlayout representing a table
-            GridLayout:
-                size_hint: 1, None
-                cols: 3
-                row_force_default: True
-                # Set the row height to 100 px
-                row_default_height: 100
-                canvas:
-                    Color:
-                        rgba: .5, .5, .5, .25
-                    # Make a rectangle to render the canvas color
-                    Rectangle:
-                        size: self.size
-                        pos: self.pos
-                # The 'slot1' is an input 'box'
-                TextInput:
-                    id: testing_var
-
-                    # Set the input text box background to transparent
-                    background_color: 0, 0, 0, 0
-                    font_size: 25
-                    text: 'default'
-                    multiline: False
-                    on_text_validate: root.press()
-                Label:
-                    text: 'slot 2'
-                Label:
-                    text: 'slot 3'
-                TextInput:
-                    text: 'A2'
-                    multiline: False
-                Label:
-                    text: 'slot 5'
-                Label:
-                    text: 'slot 6'
-                Label:
-                    text: 'A3'
-                Label:
-                    text: root.test_var.text  # slot 8
-                TextInput:
-                    id: testing_var2  # slot 9
-                    multiline: False
-                Label:
-                    text: root.test_var2.text  # slot 10
-                Label:
-                    text: 'slot 11'
-                Button:
-                    text: 'Show PopUp window'  # slot 12
-                    on_release: root.p.open()
-
         Button:
-            size_hint: 1, .25
-            pos_hint: {'top': .25, 'right': 1}
-            text: 'push'
+            size_hint: None, None
+            size: 100, 100
+            pos_hint: {'center_x': .8, 'center_y': .9}
+            text: 'Keyboard'
+            font_size: 20
             color: 0, 1, 1, 1
+            background_color: .6, 0, 6, .6
             on_release: root.show_keyboard()
 
+        GridLayout:
+            cols: 3
+            size_hint: 1, None
+            size: 0, 100
+            pos_hint: {'center_y': .75}
+            row_force_default: True
+            # Set the row height to 100 px
+            row_default_height: root.height*.1
+            height: self.minimum_height
+            canvas:
+                Color:
+                    rgba: .5, .5, .5, .5
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+            # Column titles
+            Label:
+                text: 'A'
+            Label:
+                text: 'B'
+            Label:
+                text: 'C'
+
+        FloatLayout:
+            size_hint: 1, .7
+            canvas:
+                Color:
+                    rgba: 1, .3, 0, .5
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+            ScrollView:
+
+                # Here a gridlayout representing a table
+                GridLayout:
+                    id: container
+
+                    size_hint_y: None
+                    cols: 3
+                    row_force_default: True
+                    # Set the row height to 100 px
+                    row_default_height: root.height*.1
+                    height: self.minimum_height
+
+        GridLayout:
+            cols:3
+            size_hint_y: None
+            size_y: 100
+            canvas:
+                Color:
+                    rgba: 1, 0, .5, 1
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+            Button:
+                text: "Add"
+                #background_color: 1, 1, 1, .5
+            Button:
+                text: 'Subtract'
+            Button:
+                text: 'change'
 
 <ColourScreen>:
     name: 'color'
@@ -189,7 +181,7 @@ Root:
         orientation: 'vertical'
         Label:
             text: 'colour {:.2},{:.2},{:.2} screen'.format(*root.colour[:3])
-            font_size: 30
+            font_size: 40
             color: 0, 0, 0, 1
         Widget:
             canvas:
@@ -228,7 +220,7 @@ Root:
                     size: root.size
         Label:
             text: 'Settings'
-            font_size: 30
+            font_size: 40
             color: 0, 0, 0, 1
             pos_hint: {'top': 1.4}
         BoxLayout:
@@ -280,16 +272,26 @@ Root:
 <AboutScreen>
     name: 'about'
     FloatLayout:
+
         Label:
+            size_hint: 1, .25
             text: 'About'
-            font_size: 100
-            pos_hint: {'center_x': 0.5, 'center_y': .75}
+            font_size: 40
+            pos_hint: {'center_x': .5, 'center_y': .85}
+
+        Label:
+            size_hint: 1, 1
+            text: 'Blah blah blah blah blah blah blah blah blah\n' * 15
+            font_size: 30
+            pos_hint: {'center_x': .5, 'center_y': .5}
 
         Button:
             text: 'back'
             font_size: 50
-            pos_hint: {'center_x': 0.5, 'center_y': 0.25}
-            size_hint: .5, .25
+            pos_hint: {'center_x': 0.5, 'center_y': .15}
+            size_hint: .35, .10
+            background_color: 1, .5, .25, .5
+
             on_release:
                 root.manager.transition.direction = "right"
                 app.root.current = 'settings'
