@@ -118,14 +118,14 @@ Root:
             pos_hint: {'y': 0}
             canvas:
                 Color:
-                    rgba: .5, 0, 0, .5
+                    rgba: .5, 0, 0, .0  # red rectangle...
                 Rectangle:
                     size: self.size
                     pos: self.pos
 
             # Table title
             GridLayout:
-                cols: 3
+                cols: 5
                 size_hint: 1, None
                 #pos_hint: {'center_y': 1}
                 row_force_default: True
@@ -144,6 +144,10 @@ Root:
                     text: 'B'
                 Label:
                     text: 'C'
+                Label:
+                    text: 'D'
+                Label:
+                    text: 'E'
 
             # Scrollable area
             FloatLayout:
@@ -152,7 +156,7 @@ Root:
 
                 ScrollView:
                     #size_hint: None, None
-                    pos_hint: {'x': .5, 'y': .5}
+                    pos_hint: {'x': 0, 'y': 0}
 
                     # Columns of the table layout
                     BoxLayout:
@@ -161,26 +165,21 @@ Root:
                         pos_hint: {'y': 1}
                         canvas:
                             Color:
-                                rgba: 0, 0, .5, .5
+                                rgba: 0, 0, .5, .33 # scrollable block from table
                             Rectangle:
                                 size: self.size
                                 pos: self.pos
 
+                        # column 'A'
                         GridLayout:
                             cols: 1
                             #size_hint_x: root.x * .2
                             row_force_default: True
                             row_default_height: root.height * .05
-                            canvas:
-                                Color:
-                                    rgba: 0, .5, 0, .5
-                                Rectangle:
-                                    size: self.size
-                                    pos: self.pos
+
                             TextInput:
                                 text: 'cat'
                                 default_height: root.height * .05
-
                             TextInput:
                                 text: 'cat'
                                 background_color: 0, 0, 0, 0
@@ -193,20 +192,15 @@ Root:
                             TextInput:
                                 text: 'cat'
 
+                        # column 'B'
                         GridLayout:
                             cols: 1
                             row_force_default: True
                             row_default_height: root.height * .05
-                            canvas:
-                                Color:
-                                    rgba: 0, .5, 0, .5
-                                Rectangle:
-                                    size: self.size
-                                    pos: self.pos
+
                             Label:
-                                text: 'cat'
+                                text: 'pla'
                                 default_height: root.height * .05
-
                             Label:
                                 text: 'pla'
                             Label:
@@ -218,20 +212,15 @@ Root:
                             Label:
                                 text: 'pla'
 
+                        # column 'C'
                         GridLayout:
                             cols: 1
                             row_force_default: True
                             row_default_height: root.height * .05
-                            canvas:
-                                Color:
-                                    rgba: 0, .5, 0, .5
-                                Rectangle:
-                                    size: self.size
-                                    pos: self.pos
+
                             Label:
-                                text: 'cat'
+                                text: 'tar'
                                 default_height: root.height * .05
-
                             Label:
                                 text: 'tar'
                             Label:
@@ -243,20 +232,15 @@ Root:
                             Label:
                                 text: 'tar'
 
+                        # column 'D'
                         GridLayout:
                             cols: 1
                             row_force_default: True
                             row_default_height: root.height * .05
-                            canvas:
-                                Color:
-                                    rgba: 0, .5, 0, .5
-                                Rectangle:
-                                    size: self.size
-                                    pos: self.pos
+
                             Label:
-                                text: 'cat'
+                                text: 'c'
                                 default_height: root.height * .05
-
                             Label:
                                 text: 'c'
                             Label:
@@ -268,21 +252,16 @@ Root:
                             Label:
                                 text: 'c'
 
+                        # column 'E'
                         GridLayout:
                             cols: 1
                             row_force_default: True
                             row_default_height: root.height * .05
                             height: self.minimum_height
-                            canvas:
-                                Color:
-                                    rgba: 0, .5, 0, .5
-                                Rectangle:
-                                    size: self.size
-                                    pos: self.pos
-                            Label:
-                                text: 'cat'
-                                default_height: root.height * .05
 
+                            Label:
+                                text: 'bud'
+                                default_height: root.height * .05
                             Label:
                                 text: 'bud'
                             Label:

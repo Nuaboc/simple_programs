@@ -17,14 +17,15 @@ before importing other modules
 """
 
 from kivy.config import Config
-#Config.set('kivy', 'keyboard_mode', 'systemandmulti')
+# Config.set('kivy', 'keyboard_mode', 'systemandmulti')
 # Limit the resize option to be False
-# Config.set('graphics', 'resizable', 0)
-# The width nad height will be set as for an iphone 11R
+Config.set('graphics', 'resizable', 0)
+# The width and height will be set a little smaller than the iphone 11R
+# (414x896) >> (372x806)
 # Fix the width of the window
-# Config.set('graphics', 'width', 414)
+Config.set('graphics', 'width', 372)
 # Fix the height of the window
-# Config.set('graphics', 'height', 896)
+Config.set('graphics', 'height', 806)
 
 # Now the rest of the modules may be imported
 # Standard library imports
